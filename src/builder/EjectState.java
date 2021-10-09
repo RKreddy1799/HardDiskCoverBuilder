@@ -16,6 +16,17 @@ public class EjectState implements State {
 	@Override
 	public void ejectHDD() {
 		System.out.println("Ejected HDD");
+		System.out.println("Creating new HardDiskCover");
+		CoverBuilder plasticCoverBuilder = new PlasticCoverBuilder();
+		DiskCover plasticCover = plasticCoverBuilder.addAbcPlastic().addAcrylic().addCopper().addNickel().addNylon().addPVC().addZinc().build();
+		plasticCover.prepare();
+		plasticCover.heat();
+		plasticCover.drawing();
+		plasticCover.rolling();
+		plasticCover.extrusion();
+		plasticCover.forging();
+		plasticCover.pack();
+		System.out.println(plasticCover);
 
 	}
 
