@@ -17,7 +17,7 @@ public class HardDiskCoverBuilder {
 		diskCover.eject();
 		
 		System.out.println(diskCover);
-
+		diskCover.eject();
 	}
 
 }
